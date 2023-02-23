@@ -2,6 +2,7 @@
     --main-cinza: #CCCCCC;
     --main-branco: #FFFFFF;
     --main-preto: #000000;
+    --main-ciano: #00FFFF;
 }
 
 * {
@@ -35,6 +36,38 @@ main {
     margin: 0;
     flex-basis: 40%;
     position: relative;
+}
+
+.alterar {
+    margin: 2px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--main-preto);
+    padding: 10px;
+    background-color: var(--main-ciano);
+}
+
+.alterar:hover {
+    color: var(--main-preto);
+    background-color: var(--main-branco);
+    cursor: pointer;
+}
+
+.alterar:active {
+    color: var(--main-ciano);
+    background-color: var(--main-preto);
+}
+
+.botoes {
+   position: relative;
+   right: 5%;
+   bottom: 10%;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: flex-start;
 }
 
 .robo {
